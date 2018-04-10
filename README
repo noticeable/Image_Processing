@@ -1,0 +1,79 @@
+#Code written by:
+#Name: 				Shreya Gupta
+
+
+	Image manipulation codes:
+
+
+-Geometric Wapring
+-Panoramic Stitching
+-Digital Halftoning: fixed thresholding, random thresholding and Dithering
+-Morphological image processing: Shrinking, thinning, skeletonizing, counting stars
+-Texture Classification
+-RGB to grayscale conversion
+-Image resizing using bilinear interpolation
+-Histogram equalization
+-Oil painting effect
+-Image denosing 
+
+
+
+Installation:
+Unzip source code zip file at a convinient location.
+make clean && make
+
+Testing:
+cd bin/
+1. For Geometric Warping
+	Usage  : ./geometericWarping <input image> <width> <height> <bits per pixel>
+	Example: ./geometericWarping panda.raw 512 512 3
+
+
+2. For Panoramic Stitching
+	Usage  : ./panoramicStitching <input image1> <width> <height> <bits per pixel> <input image 2><input image 3>
+	Example: ./panoramicStitching middle.raw 480 640 3 left.raw right.raw
+
+
+3. For Digital Halftoning
+	Usage  : ./digitalHalftoning <input image> <input_width> <input_height> <input bits per pixel> <type of thresholding>
+	(type=1:Fixed )
+	(type=2:Random)
+	(type=3:Dithering using Bayer's matrix)
+	Example: ./digitalHalftoning colorechecker.raw 512 512 1 1
+
+
+4. For Morphological Image processing operation
+	Usage  : ./morphology <input image>  <input_width> <input_height> <input bits per pixel> 
+	Example: ./morphology star.raw 640 480 1
+
+5. For Texture Classification
+	Usage  : ./texture_classification 
+	Example: ./texture_classification 
+
+6. For RGB to Grayscale
+	Usage  : ./rgb2gray <input image> <width> <height> <bits per pixel>
+	Example: ./rgb2gray Tiffany.raw 512 512 3
+
+7.  For Image Resizing
+	Usage  : ./imageResizing <input image> <input_width> <input_height> <input bits per pixel> <output_width> <output_height>
+	Example: ./imageResizing Airplane.raw 512 512 3 650 650
+
+8. For Histogram Equalization
+	Usage  : ./histogramEqualization <input image> <input_width> <input_height> <input bits per pixel> 
+		       
+	Example: ./histogramEqualization Desk.raw 400 300 3 
+	         ./Bucket Desk.raw 400 300 3
+
+9. For Oil Painting Effect
+	Usage  : ./oilPaintingEffect <input image> <width> <height> <bits per pixel> <window size> <colors> 
+	Example: ./oilPaintingEffect Barn.raw 380 275 3 5 64
+
+10.For Denoising
+	Usage  : ./denoising <input image>  <input_width> <input_height> <input bits per pixel> <window size> <original_image>
+	Example: ./denoising Lena_mixed.raw Lena.raw 512 512 3 5 Lena.raw
+
+
+	
+	
+
+
