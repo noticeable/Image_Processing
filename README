@@ -15,6 +15,7 @@
 -Histogram equalization
 -Oil painting effect
 -Image denosing 
+-Texture Segmentation
 
 
 
@@ -71,6 +72,11 @@ cd bin/
 10.For Denoising
 	Usage  : ./denoising <input image>  <input_width> <input_height> <input bits per pixel> <window size> <original_image>
 	Example: ./denoising Lena_mixed.raw Lena.raw 512 512 3 5 Lena.raw
+
+11. For Texture Segmentation
+	
+	Usage  : ./textureSegmentation <input image>  <input_width> <input_height> <input bits per pixel> 
+	Example: ./textureSegmentation comb.raw 600 450 1
 
 
 	
