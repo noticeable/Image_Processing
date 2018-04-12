@@ -147,7 +147,11 @@ convert -size 321x481 -depth 8 SobelDetector_noisy_edges.gray Output/SobelDetect
 
 
 
-
+./textureSegmentation comb.raw 600 450 1 
+cp -fr comb.raw comb.gray
+convert -size 600x450 -depth 8 comb.gray Output/comb.jpg
+mv -f segmented_texture.raw segmented_texture.gray
+convert -size 600x450 -depth 8 segmented_texture.gray Output/segmented_texture.jpg
 
 
 
